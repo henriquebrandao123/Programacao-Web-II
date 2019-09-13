@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('/paciente/index','paciente\pacienteController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
