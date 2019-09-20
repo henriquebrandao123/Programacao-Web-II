@@ -8,6 +8,12 @@ use App\models\paciente;
 
 class pacienteController extends Controller
 {
+    private $paciente;
+
+    public function __construct(paciente $paciente)
+    {
+        $this->paciente = $paciente;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +21,9 @@ class pacienteController extends Controller
      */
     public function index()
     {
-        return view('paciente.index');
+        $paciente = $this->paciente->all();
+        //dd($paciente);
+        return view('paciente.index', compact('paciente'));
     }
 
     /**

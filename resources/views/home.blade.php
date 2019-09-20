@@ -3,9 +3,10 @@
 @section('title', 'AdminLTE')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Deixa Seu LIKE</h1>
 @stop
 
 @section('content')
-    <p>You are logged in!</p>
+    {{--  ;<button type="button" class="btn btn-primary">Cliente</button>  --}}
+    <a href="{{route('paciente.index')}}" class="btn btn-primary">Cliente</a>
 @stop

@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>CLinica</b>',
+    'logo' => '<b>Clínica Unifisio</b>',
 
-    'logo_mini' => '<b>Cli</b>nica',
+    'logo_mini' => '<b>UNI</b>',
 
     /*
     |--------------------------------------------------------------------------
