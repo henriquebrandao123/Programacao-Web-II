@@ -17,7 +17,7 @@
                         <div class="box-header">
                                 <div class="form-inline">
                                         <div class="col-xs-6 col-sm-2">
-                                                <a href="" class="btn btn-block btn-primary">
+                                                <a href="{{route('paciente.create-edit')}}" class="btn btn-block btn-primary">
                                                 <i class="fa fa-fw fa-plus"></i> Cadastrar</a>
                                         </div>
                                 </div>
@@ -50,7 +50,20 @@
                                         <td>{{$model->bairro}}</td>
                                         <td>{{$model->cidade}}</td>
                                         
-                                       {{--  <td class="td-action text-left">  --}}
+                                       <td class="td-actions text-left">
+                                                <a href="{{route('paciente.create-edit')}}" class="btn btn-success" data-placement="top" title="Editar Paciente">
+                                                        <i class="fas fa-pencil-alt"></i>
+                                                 </a>
+
+                                                 <a href="{{route('paciente.create-edit')}}" class="btn btn-danger" data-placement="top" title="Deletar Paciente">
+                                                                <i class="fa fa-fw fa-minus-circle"></i>
+                                                </a>
+
+                                                 {{--  <a href="{{route('cliente.edit')}}" class="btn btn-danger" data-placement="top"
+                                                        title="Editar Cliente">
+                                                        <i class="fa fa-fw fa-minus-circle"></i>
+                                                </a>  --}}
+                                        </td>
                                 </tr>
                        @endforeach
                                 

@@ -15,6 +15,7 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/paciente/index','paciente\pacienteController@index')->name('paciente.index');
 
+Route::get('/paciente/create','paciente\pacienteController@create')->name('paciente.create-edit');
 Auth::routes();
 
 

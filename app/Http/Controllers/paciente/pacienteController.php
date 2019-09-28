@@ -33,7 +33,7 @@ class pacienteController extends Controller
      */
     public function create()
     {
-        //
+        return view('paciente.create-edit');
     }
 
     /**
